@@ -15,7 +15,7 @@ const streamers = [
 ];
 
 const StreamersList = () => (
-  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-6 p-6 justify-center w-full max-w-7xl mx-auto">
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-x-8 gap-y-12 p-6 place-items-center w-full max-w-screen-xl mx-auto">
     {streamers.map((streamer, index) => (
       <StreamerCard key={index} {...streamer} />
     ))}

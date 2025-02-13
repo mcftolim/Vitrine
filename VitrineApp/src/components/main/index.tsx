@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../header";
 import FeaturedStreamers from "../featuredStreamers";
 import StreamersList from "../streamersList";
-import Footer from "../Footer";
+import Footer from "../footer";
 import "../../index.css";
 
 const Main = ({ onShowLogin, onShowRegister }) => {
