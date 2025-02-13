@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import Home from "./components/Home";
-import ModalLogin from "./components/ModalLogin";
-import ModalRegister from "./components/ModalRegister";
+import { useState } from "react";
+
+
+import Home from "./components/home";
+import ModalLogin from "./components/modalLogin";
+import ModalRegister from "./components/modalRegister";
 
 export default function App() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);

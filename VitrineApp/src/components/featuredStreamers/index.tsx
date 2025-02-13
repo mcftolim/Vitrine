@@ -1,5 +1,5 @@
 import React from "react";
-import StreamerCard from "../StreamerCard";
+import StreamerCard from "../streamerCard";
 
 const featured = [{ name: "Liz", status: "off", imgSrc: "/images/liz.png" }];
 
