@@ -1,0 +1,182 @@
+.streamer-card {
+    min-width: 200px;
+    max-width: 200px;
+    height: 300px;
+    background: #242426;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .streamer-card.online {
+    border-color: #37aa20;
+  }
+  
+  .streamer-card.chat {
+    border-color: #82d6c8;
+  }
+  
+  .streamer-card.private {
+    border-color: #cd3159;
+  }
+  
+  .streamer-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .streamer-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .streamer-status.online {
+    background-color: rgba(34, 124, 53, 0.8);
+  }
+  
+  .streamer-status.chat {
+    background-color: rgba(130, 214, 200, 0.8);
+  }
+  
+  .streamer-status.private {
+    background-color: rgba(205, 49, 89, 0.8);
+  }
+  
+  .streamer-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .streamer-name {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .streamer {
+    position: relative;
+    width: 130px;
+    height: 190px;
+    border: 3px solid #ff0000;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+  }
+  
+  /* Estilos de borda baseados no status */
+  .streamer.on { border-color: #2fa817; }
+  .streamer.off { border-color: #ff0000; }
+  .streamer.chat { border-color: #00c4b4; }
+  .streamer.private { border-color: #ff1155; }
+  .streamer.secret { border-color: #d44bef; }
+  
+  .status-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  /* Cores de fundo dos status - Mais transparentes como na imagem */
+  .status-title-on { background-color: rgba(47, 168, 23, 0.3); }
+  .status-title-off { background-color: rgba(255, 0, 0, 0.3); }
+  .status-title-chat { background-color: rgba(0, 196, 180, 0.3); }
+  .status-title-private { background-color: rgba(255, 17, 85, 0.3); }
+  .status-title-secret { background-color: rgba(212, 75, 239, 0.3); }
+  
+  /* Container para a imagem principal */
+  .main-image {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    z-index: 1;
+    background-image: 
+      linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+      linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
+      linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-color: white;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Container para a imagem do perfil */
+  .profile {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+  
+  .profile-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+    overflow: hidden;
+    background-image: 
+      linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+      linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
+      linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 10px 10px;
+    background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+    background-color: white;
+  }
+  
+  .profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  
+  .name h1 {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  } 

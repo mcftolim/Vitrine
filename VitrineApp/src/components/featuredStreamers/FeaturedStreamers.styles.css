@@ -1,0 +1,123 @@
+.featured-section {
+  width: 100vw;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.featured-container {
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+
+.featured-streamers {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.featured-streamer {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.featured-image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.featured-streamer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cores das bordas baseadas no status */
+.featured-streamer.online .featured-image-container {
+  border-color: #37aa20;
+}
+
+.featured-streamer.chat .featured-image-container {
+  border-color: #82d6c8;
+}
+
+.featured-streamer.private .featured-image-container {
+  border-color: #cd3159;
+}
+
+.featured-streamer.offline .featured-image-container {
+  border-color: #a03333;
+}
+
+/* Status label */
+.featured-status {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.featured-name {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 10px 0 20px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .featured-section {
+    padding: 0 10px;
+  }
+
+  .featured-streamers {
+    gap: 20px;
+  }
+
+  .featured-streamer {
+    width: 60px;
+    height: 60px;
+  }
+
+  .featured-status {
+    font-size: 8px;
+    padding: 2px 6px;
+  }
+
+  .featured-name {
+    font-size: 10px;
+  }
+}

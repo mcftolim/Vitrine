@@ -1,0 +1,121 @@
+.footer {
+    width: 100vw;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 0 10px;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-content {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 40px;
+  }
+  
+  .footer-column:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #333;
+  }
+  
+  .footer-column h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 0 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .footer-column ul li:hover {
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    width: 100vw;
+    text-align: center;
+    padding: 20px 40px 0;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-bottom p {
+    color: #999;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  
+  /* Media queries para responsividade */
+  @media screen and (max-width: 1024px) {
+    .footer-content {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  
+    .footer-column {
+      width: 50%;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+  
+    .footer-column:nth-child(2n)::after {
+      display: none;
+    }
+  
+    .footer-column:nth-child(-n+2) {
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-column {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  
+    .footer-column::after {
+      display: none;
+    }
+  
+    .footer-column:not(:last-child) {
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+    }
+  
+    .footer-bottom {
+      padding: 20px 20px 0;
+    }
+  } 

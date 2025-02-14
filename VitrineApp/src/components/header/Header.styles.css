@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #242426;
+    color: white;
+    height: 170px;
+    padding: 0 20px;
+  }
+  
+  header img#hamburguer {
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+  }
+  
+  .button-home {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .custom-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  .cadastro {
+    background: #a03333 !important;
+  }
+  
+  #login {
+    background-color: #37aa20 !important;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0 15px;
+      height: 140px;
+    }
+  
+    header img#hamburguer {
+      width: 96px;
+      height: 96px;
+    }
+  
+    .button-home {
+      gap: 10px;
+    }
+  
+    .custom-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    header {
+      padding: 0 10px;
+      height: 120px;
+    }
+  
+    header img#hamburguer {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .custom-button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  } 

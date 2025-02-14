@@ -8,7 +8,7 @@ const ModalLogin = ({ isOpen, onClose }) => {
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-96 text-white relative">
         <button className="absolute top-4 right-4 text-white text-xl" onClick={onClose}>✕</button>
         <div className="flex flex-col items-center">
-          <img src="/assets/logoPreta.svg" alt="Logo Vitrine" className="w-16 mb-4" />
+          <img src="/images/logo.png" alt="Logo Vitrine" className="w-16 mb-4" />
           <h2 className="text-2xl font-semibold">Login</h2>
         </div>
         <input type="text" placeholder="E-mail" className="w-full p-3 mt-4 rounded-md bg-gray-800 focus:outline-none" />

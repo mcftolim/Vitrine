@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .main-content {
+    flex: 1;
+    width: 100vw;
+    padding: 20px;
+  }
+  
+  .title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .subtitle {
+    color: #999;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 32px 0 16px;
+  }
+  
+  .streamers-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  /* Media queries ajustadas */
+  @media screen and (max-width: 1919px) {
+    .main-content {
+      padding: 20px 80px;
+    }
+  }
+  
+  @media screen and (max-width: 1599px) {
+    .main-content {
+      padding: 20px 60px;
+    }
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .main-content {
+      padding: 20px 40px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .main-content {
+      padding: 20px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .main-content {
+      padding: 20px 15px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .subtitle {
+      font-size: 20px;
+    }
+  } 
